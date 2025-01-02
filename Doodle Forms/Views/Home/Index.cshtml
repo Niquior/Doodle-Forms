@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center foreground">
+    <h1 class="display-4">Welcome to Doodle Forms!</h1>
+    <div class="item">
+        <p>New to Doodle Forms? You can view or anonymously fill out forms using links.</p>
+        <a asp-controller="FormGallery" asp-action="ViewFormsGallery"><button class="btn btn-primary">View Forms</button></a>
+        <a asp-controller="FormFillingOut" asp-action="EnterFormLink"><button class="btn btn-primary">Enter link</button></a>
+    </div>
+    <div class="item">
+        <p style="margin-top: 30px">OR</p>
+        <p style="margin-top: 30px">You can register or log in and create your own forms!</p>
+        <a asp-controller="Account" asp-action="Login"><button class="btn btn-primary">Login</button></a>
+        <a asp-controller="Account" asp-action="Register"><button class="btn btn-secondary">Register</button></a>
+    </div>
+</div>

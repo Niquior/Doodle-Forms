@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Doodle Forms.props" />
+</Project>
