@@ -1,0 +1,9 @@
+runtime: aspnetcore
+env: flex
+entrypoint: dotnet "Doodle Forms.dll"
+runtime_config:
+    document_root: ./publish
+    operating_system: "ubuntu22"
+    runtime_version: "8"
+beta_settings:
+  cloud_sql_instances: doodle-forms:us-central1:doodleformsdb
