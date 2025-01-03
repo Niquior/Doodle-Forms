@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/doodle-forms/my-image', '.']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['run', 'tests', '--service-account', 'my-service-account@my-project.iam.gserviceaccount.com']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', '-image', 'gcr.io/doodle-forms/my-image']
