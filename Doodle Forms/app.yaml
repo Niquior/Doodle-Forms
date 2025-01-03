@@ -7,8 +7,3 @@ runtime_config:
     runtime_version: "8"
 beta_settings:
   cloud_sql_instances: doodle-forms:us-central1:doodleformsdb
-env_variables:
-  DB_SERVER: /cloudsql/doodle-forms:us-central1:doodleformsdb
-  DB_NAME: doodleformsdb
-  DB_USER: root
-  DB_PASSWORD: sY8v\CrTxP@Ht%x2

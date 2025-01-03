@@ -11,8 +11,7 @@ namespace Doodle_Forms
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            var connectionString = new MySqlConnectionStringBuilder(builder.Configuration.GetConnectionString("DefaultConnection"))
-                { Password = Environment.GetEnvironmentVariable("MySQL_Password") }.ConnectionString;
+            var connectionString = new MySqlConnectionStringBuilder(builder.Configuration.GetConnectionString("DefaultConnection")).ConnectionString;
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
